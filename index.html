@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta cahrset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frequently Asked Questions</title>
+        <link rel="stylesheet" href="style.css" />
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" 
+        />
+
+    </head>
+<body>
+    <div class="wrapper">
+      <p>The Begninning of a New Asset class</p>
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          Will the glue of the poster cause damage to the wall?
+          <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We use a strong glue to make sure the poster stays on the surface for a longer period of time. If taken off by force it will damage the wall a bit but won't cause significant damage.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            Will the poster leave behind any residue?
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                After the poster has lived it's life and comes off the surface, 
+                it will leave some easily removable residue if not none.
+            </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            How do i track my order?
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Yes, once the order has been confirmed and shipped you will recieve tracking details via mail to let you know about the status of your order.
+                Kindly always also check your Junk/Spam folder as our mail might end up there depending on your mailbox setting.
+            </p>
+        </div>
+      </div>
+      <div class="faq">
+        <button class="accordion">
+            The poster i want to order is out of stock, when will it get restocked?
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                If any of our products is out of stock,
+                it will get restocked within 1-2 weeks.
+            </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            Can i return a product once it gets delivered to me and get a refund on it?
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Once an order has been shipped we dont order a refund,
+                However you can get exchange the order within 7 days of recieving the order with anything else available on our website.
+                Just get in touch with us at {graphixgazette@gmail.com} and we'll work it out!!
+            </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            Can i cancel my order after placing it online?
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                You can cancel your order before it gets shipped and we will refund the full amount back to you.
+                Shipping of a product takes around 72 hours (doesn't include weekends or national holidays),
+                shipping will only happen on weekdays.
+                Once shipped an order can't be cancelled.
+            </p>
+        </div>
+      <div class="faq">
+        <button class="accordion">
+            Can i get my poster customized with custom quotes and images?
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Yes, you can customize your own poster the way you want it but it will cost you 20 INR more.
+            </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            What do i do if i recieved an incorrect order?
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                Contact us immediately when you notice the incorrect items at {graphixgazette@gmail.com}
+                and share a video, a few pictures, and your order id.
+            </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+            How long will it take for me to recieve my order after placing it?
+            <i class="fa-solid fa-circle-chevron-down"></i>
+        </button>
+        <div class="pannel">
+            <p>
+                It will take your order 72 hours to get shipped and within 1-2 weeks you should recieve your order.
+                This delivery duration might vary depending on where the order is getting delivered.
+            </p>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+  
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+  
+            var pannel = this.nextElementSibling;
+  
+            if (pannel.style.display === "block") {
+              pannel.style.display = "none";
+            } else {
+              pannel.style.display = "block";
+            }
+          });
+        }
+      </script>
+</body>
+</html>
